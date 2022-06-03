@@ -1,10 +1,10 @@
-# nouns-monorepo
+# 0xNouns-monorepo
 
-Nouns DAO is a generative avatar art collective run by a group of crypto misfits.
+0xNouns DAO is a generative avatar art collective run by a group of crypto misfits.
 
 ## Contributing
 
-If you're interested in contributing to Nouns DAO repos we're excited to have you. Please discuss any changes in `#developers` in [discord.gg/nouns](https://discord.gg/nouns) prior to contributing to reduce duplication of effort and in case there is any prior art that may be useful to you.
+If you're interested in contributing to 0xNouns DAO repos we're excited to have you. Please discuss any changes in `#dev-chat` channel in the [0xNouns Discord](https://discord.gg/pFecwjPwvu) prior to contributing to reduce duplication of effort and in case there is any prior art that may be useful to you.
 
 ## Packages
 
