@@ -45,7 +45,7 @@ const encode = async () => {
     DESTINATION,
     JSON.stringify(
       {
-        bgcolors: ['d5d7e1', 'e1d7d5'],
+        bgcolors: ['fed32f'],
         ...encoder.data,
       },
       null,
