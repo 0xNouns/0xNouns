@@ -2,7 +2,6 @@
   "bgcolors": ["fed32f"],
   "palette": [
     "",
-    "fed32f",
     "ffffff",
     "c5b9a1",
     "cfc2ab",
@@ -241,7 +240,8 @@
     "395ed1",
     "ffc5f0",
     "cbc1bc",
-    "d4cfc0"
+    "d4cfc0",
+    "fed32f"
   ],
   "images": {
     "bodies": [
