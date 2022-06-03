@@ -23,9 +23,9 @@ export class DiscordAuctionLifecycleHandler implements IAuctionLifecycleHandler 
       const attachment = new Discord.MessageAttachment(png, attachmentName);
       const message = new Discord.MessageEmbed()
         .setTitle(`New Auction Discovered`)
-        .setDescription(`An auction has started for Noun #${auctionId}`)
-        .setURL('https://nouns.wtf')
-        .addField('Noun ID', auctionId, true)
+        .setDescription(`An auction has started for 0xNoun #${auctionId}`)
+        .setURL('https://0xnouns.wtf')
+        .addField('0xNoun ID', auctionId, true)
         .attachFiles([attachment])
         .setImage(`attachment://${attachmentName}`)
         .setTimestamp();
@@ -42,7 +42,7 @@ export class DiscordAuctionLifecycleHandler implements IAuctionLifecycleHandler 
   async handleNewBid(auctionId: number, bid: Bid) {
     const message = new Discord.MessageEmbed()
       .setTitle(`New Bid Placed`)
-      .setURL('https://nouns.wtf')
+      .setURL('https://0xnouns.wtf')
       .setDescription(await formatBidMessageText(auctionId, bid))
       .setTimestamp();
     await Promise.all(this.discordClients.map(c => c.send(message)));
@@ -52,7 +52,7 @@ export class DiscordAuctionLifecycleHandler implements IAuctionLifecycleHandler 
   async handleNewProposal(proposal: Proposal) {
     const message = new Discord.MessageEmbed()
       .setTitle(`New Governance Proposal`)
-      .setURL(`https://nouns.wtf/vote/${proposal.id}`)
+      .setURL(`https://0xnouns.wtf/vote/${proposal.id}`)
       .setDescription(formatNewGovernanceProposalText(proposal))
       .setTimestamp();
     await Promise.all(this.discordClients.map(c => c.send(message)));
@@ -62,7 +62,7 @@ export class DiscordAuctionLifecycleHandler implements IAuctionLifecycleHandler 
   async handleUpdatedProposalStatus(proposal: Proposal) {
     const message = new Discord.MessageEmbed()
       .setTitle(`Proposal Status Update`)
-      .setURL(`https://nouns.wtf/vote/${proposal.id}`)
+      .setURL(`https://0xnouns.wtf/vote/${proposal.id}`)
       .setDescription(formatUpdatedGovernanceProposalStatusText(proposal))
       .setTimestamp();
     await Promise.all(this.discordClients.map(c => c.send(message)));
@@ -72,7 +72,7 @@ export class DiscordAuctionLifecycleHandler implements IAuctionLifecycleHandler 
   async handleProposalAtRiskOfExpiry(proposal: Proposal) {
     const message = new Discord.MessageEmbed()
       .setTitle(`Proposal At-Risk of Expiry`)
-      .setURL(`https://nouns.wtf/vote/${proposal.id}`)
+      .setURL(`https://0xnouns.wtf/vote/${proposal.id}`)
       .setDescription(formatProposalAtRiskOfExpiryText(proposal))
       .setTimestamp();
     await Promise.all(this.discordClients.map(c => c.send(message)));
@@ -82,7 +82,7 @@ export class DiscordAuctionLifecycleHandler implements IAuctionLifecycleHandler 
   async handleGovernanceVote(proposal: Proposal, vote: Vote) {
     const message = new Discord.MessageEmbed()
       .setTitle(`New Proposal Vote`)
-      .setURL(`https://nouns.wtf/vote/${proposal.id}`)
+      .setURL(`https://0xnouns.wtf/vote/${proposal.id}`)
       .setDescription(await formatNewGovernanceVoteText(proposal, vote))
       .setTimestamp();
     await Promise.all(this.discordClients.map(c => c.send(message)));
