@@ -2,78 +2,35 @@ import React from 'react';
 import classes from './NoundersPage.module.css';
 import Section from '../../layout/Section';
 import { Col, Row, Card } from 'react-bootstrap';
-import pfp4156 from '../../assets/nounder-pfps/4156.png';
-import pfp9999 from '../../assets/nounder-pfps/9999.png';
-import pfpCryptoseneca from '../../assets/nounder-pfps/cryptoseneca.png';
-import pfpDevcarrot from '../../assets/nounder-pfps/devcarrot.png';
-import pfpDom from '../../assets/nounder-pfps/dom.png';
-import pfpKai from '../../assets/nounder-pfps/kai.png';
-import pfpSolimander from '../../assets/nounder-pfps/solimander.png';
-import pfpGremplin from '../../assets/nounder-pfps/gremplin.png';
-import pfpTimpers from '../../assets/nounder-pfps/timpers.png';
-import pfpVapeape from '../../assets/nounder-pfps/vapeape.png';
-import { Trans } from '@lingui/macro';
+import pfpaubtoshi from '../../assets/0xnounder-pfps/aubtoshi.png';
+import pfpcheffo from '../../assets/0xnounder-pfps/cheffo.png';
+import pfpartismyweapon from '../../assets/0xnounder-pfps/artismyweapon.png';
+import pfpnonodynamo from '../../assets/0xnounder-pfps/nonodynamo.png';
 
 const bios = [
   {
-    name: '4156',
-    image: pfp4156,
+    name: 'Aubtoshi',
+    image: pfpaubtoshi,
     description: undefined,
-    handle: 'punk4156',
+    handle: 'aubtoshi_nft',
   },
   {
-    name: 'cryptoseneca',
-    image: pfpCryptoseneca,
+    name: 'Cheffo',
+    image: pfpcheffo,
     description: undefined,
-    handle: 'cryptoseneca',
+    handle: 'cheffo_nft',
   },
   {
-    name: 'Kai@eboy',
-    image: pfpKai,
+    name: 'ArtIsMyWeapon',
+    image: pfpartismyweapon,
     description: undefined,
-    handle: 'eBoyArts',
+    handle: 'ArtIsMyWeapon_',
   },
   {
-    name: 'dom',
-    image: pfpDom,
+    name: 'NoNoDynamo',
+    image: pfpnonodynamo,
     description: undefined,
-    handle: 'dhof',
-  },
-  {
-    name: 'vapeape',
-    image: pfpVapeape,
-    description: undefined,
-    handle: 'punk4464',
-  },
-  {
-    name: 'gremplin',
-    image: pfpGremplin,
-    description: undefined,
-    handle: 'gremplin',
-  },
-  {
-    name: 'solimander',
-    image: pfpSolimander,
-    description: undefined,
-    handle: '_solimander_',
-  },
-  {
-    name: 'devcarrot',
-    image: pfpDevcarrot,
-    description: undefined,
-    handle: 'carrot_init',
-  },
-  {
-    name: 'timpers',
-    image: pfpTimpers,
-    description: undefined,
-    handle: 'TimpersHD',
-  },
-  {
-    name: '9999',
-    image: pfp9999,
-    description: undefined,
-    handle: 'lastpunk9999',
+    handle: 'Nonodynamo_NFT',
   },
 ];
 
@@ -145,18 +102,18 @@ const NoundersPage = () => {
         </h3>
         <p style={{ textAlign: 'justify' }}>
           <Trans>
-            All Noun auction proceeds are sent to the Nouns DAO. For this reason, we, the project's
-            founders (‘Nounders’) have chosen to compensate ourselves with Nouns. Every 10th noun
+            All 0xNouns auction proceeds are sent to the 0xNouns DAO. For this reason, we, the project's
+            founders (‘0xNounders’) have chosen to compensate ourselves with 0xNouns. Every 10th 0xNoun
             for the first 5 years of the project will be sent to our multisig (5/10), where it will
-            be vested and distributed to individual Nounders.
+            be vested and distributed to individual 0xNounders.
           </Trans>
         </p>
         <p style={{ textAlign: 'justify' }}>
           <Trans>
-            The Nounders reward is intended as compensation for our pre and post-launch
+            The 0xNounders reward is intended as compensation for our pre and post-launch
             contributions to the project, and to help us participate meaningfully in governance as
-            the project matures. Since there are 10 Nounders, after 5 years each Nounder could
-            receive up to 1% of the Noun supply.
+            the project matures. Since there are 10 Nounders, after 5 years each 0xNounder could
+            receive up to 1% of the 0xNoun supply.
           </Trans>
         </p>
       </Col>
