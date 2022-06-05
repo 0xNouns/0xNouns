@@ -102,8 +102,7 @@ const NoundersPage = () => {
         <p style={{ textAlign: 'justify' }}>
             The 0xNounders reward is intended as compensation for our pre and post-launch
             contributions to the project, and to help us participate meaningfully in governance as
-            the project matures. Since there are 10 Nounders, after 5 years each 0xNounder could
-            receive up to 1% of the 0xNoun supply.
+            the project matures.
         </p>
       </Col>
     </Section>
