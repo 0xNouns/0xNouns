@@ -15,6 +15,7 @@ describe('@noun/assets utils', () => {
   // Test against Noun 116, created at block 13661786
   const NOUN116_ID = 116;
   const NOUN116_SEED: NounSeed = {
+    
     background: 1,
     body: 28,
     accessory: 120,
