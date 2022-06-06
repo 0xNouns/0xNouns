@@ -16,7 +16,7 @@
 }
 .navBarLink:hover {
   color: var(--brand-dark-green) !important;
-  background-color: #f2f2f2;
+  background-color: #fed32f;
 }
 
 @media (max-width: 992px) {
